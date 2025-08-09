@@ -1,0 +1,12 @@
+{
+  "foundryUrl": "https://adilcodes.euw-3.palantirfoundry.co.uk",
+  "site": {
+    "application": "ri.third-party-applications.main.application.4d26612f-1263-4013-9a8f-7df2cf18ec76",
+    "directory": "./dist",
+    "autoVersion": {
+      "type": "git-describe",
+      "tagPrefix": ""
+    },
+    "uploadOnly": false
+  }
+}

@@ -1,7 +1,6 @@
-import palantirLogo from "/palantir.svg";
-import reactLogo from "/react.svg";
+import { Icon, Tag } from "@blueprintjs/core";
 import React from "react";
-import css from "./Layout.module.css";
+import './index.css'
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -10,19 +9,17 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps) {
   return (
     <>
-      <div>
-        <a
-          href="https://www.palantir.com/docs/foundry/ontology-sdk/overview/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={palantirLogo} className={css.logo} alt="Palantir logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel="noopener noreferrer">
-          <img src={reactLogo} className={css.logo} alt="React logo" />
-        </a>
+      <div className="flex h-[60px] w-full border-b-[1px] border-gray-300 p-0 items-center">
+        <div className="h-full aspect-square bg-sky-100  flex items-center justify-center">
+          <Icon icon="phone-call" size={25}  className="!text-sky-700"/>
+        </div>
+        <p className="text-xl ml-4 font-semibold  font-sans"
+        >Voice Agents</p>
+        <Tag className="ml-4 bg-gray-200 text-gray-700 text-sm" >
+          Beta
+        </Tag>
       </div>
-      {children}
+      {children} 
     </>
   );
 }

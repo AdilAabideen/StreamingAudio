@@ -3,7 +3,7 @@ import { startPseudoWhisperStream } from "../../StreamingModule/index";
 
 export default function MicStreamToggle() {
 
-    const apiKey = 'ONf8SafdfEEL5bdPdIEnyOuqQ6SUFGJ4'; // local only
+
 
     const [isRecording, setRecording] = useState(false);
     const [handle, setHandle] = useState<{ stop: () => Promise<void> } | null>(null);
